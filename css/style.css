@@ -138,3 +138,9 @@ a:hover {
   font-weight: normal;
   font-size: 22px;
 }
+.button-login {
+  background: #005dab;
+}
+.button-login:hover {
+  opacity: .8;
+}
