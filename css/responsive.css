@@ -7,13 +7,9 @@
   }
 }
 @media (max-width: 576px) {
-  .home-left {
-    width: 0% !important;
-    height: 0% !important;
-    display: none !important;
-  }
   .home-right {
     width: 100% !important;
+    height: auto !important;
   }
   .form-login-home {
     width: 90%;
@@ -24,5 +20,27 @@
   }
   .card-header {
     background: rgba(81, 139, 164, 0.9);
+  }
+  .home-left {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .log-home {
+    left: 0px;
+    top: 0px;
+    width: 100% !important;
+    height: auto !important;
+    position: relative;
+    -moz-transform: translate(0);
+    -o-transform: translate(0);
+    -ms-transform: translate(0);
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  .copy-home {
+    position: relative;
+  }
+  .row-home {
+    height: auto !important;
   }
 }

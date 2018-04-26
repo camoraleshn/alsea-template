@@ -3,6 +3,8 @@
 @blue-login: hsla(198, 34%, 48%, .7);
 @blue-home: hsla(197, 95%, 25%, 1);
 @blue-button: #005dab;
+@green-button: #64b84d;
+@orange-button: #e67b21;
 @white: #fff;
 
 
@@ -16,12 +18,17 @@
 * {
 	padding: 0px;
 	margin: 0px;
+	list-style: none;
 }
 
 body, html {
 	width: 100%;
 	height: 100%;
 	font-size: 16px;
+}
+
+a:hover {
+	text-decoration: none;
 }
 
 
@@ -66,18 +73,35 @@ body, html {
 	margin: 40% 5% 0px 5%;
 }
 
-.button-login {
+.b-login {
+	display: block;
 	width: 100% !important;
 	text-align: center;
 	padding: 15px 0px !important;
 	font-size: 14px;
 	margin-top: 20px;
-	background: @blue-button;
+	background: @green-button;
 }
 
-.button-login:hover {
+.b-login:hover {
 	opacity: .8;
 }
+
+
+.b-proveedores {
+	display: block;
+	width: 100% !important;
+	text-align: center;
+	padding: 15px 0px !important;
+	font-size: 14px;
+	margin-top: 20px;
+	background: @orange-button;
+}
+
+.b-proveedores:hover {
+	opacity: .8;
+}
+
 
 .form-login-home input:active, .form-login-home input:focus {
 	background: transparent;
@@ -107,4 +131,54 @@ body, html {
 	margin-bottom: 10px;
 	background: url(../img/angel.png) center center no-repeat;
 	background-size: contain;
+}
+
+.but-login-home {
+	width: 80%;
+	margin: 0px auto;
+	padding-bottom: 25px;
+}
+
+.log-home {
+	position: absolute;
+  left: 50%;
+  top: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: hsla(198, 34%, 48%, 1);
+}
+
+.home-left {
+	position: relative;
+}
+
+.home-right ul {
+	width: 100%;
+	padding: 5%;
+}
+
+.home-right ul li {
+	width: 100%;
+	padding: 10px 0px;
+	font-size: 14px;
+}
+
+.home-right ul li a {
+	width: 100%;
+	color: #fff;
+	padding: 10px 0px;
+}
+
+.home-right ul li a:hover {
+	color: #ddd;
+}
+
+.home-right ul h3 {
+	width: 100%;
+	padding: 10px 0px;
+	font-weight: normal;
+	font-size: 22px;
 }
