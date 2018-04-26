@@ -28,6 +28,20 @@ a:hover {
 .text-white {
   color: #fff;
 }
+.button-blue {
+  display: block;
+  width: 100% !important;
+  text-align: center;
+  padding: 15px 0px !important;
+  font-size: 14px;
+  margin-top: 20px;
+  background: #005dab;
+  color: #fff;
+  border: none;
+}
+.button-blue:hover {
+  opacity: .8;
+}
 /* ==== HOME ==== */
 .title-lh {
   width: 100%;
@@ -143,4 +157,78 @@ a:hover {
 }
 .button-login:hover {
   opacity: .8;
+}
+/* ==== REGISTER ==== */
+.register-form {
+  width: 100%;
+  height: auto;
+  color: #005dab;
+}
+::placeholder {
+  font-style: italic;
+  color: rgba(81, 139, 164, 0.7);
+  font-weight: lighter;
+}
+:-ms-input-placeholder {
+  font-style: italic;
+  color: rgba(81, 139, 164, 0.7);
+  font-weight: lighter;
+}
+::-webkit-input-placeholder {
+  font-style: italic;
+  color: rgba(81, 139, 164, 0.7);
+  font-weight: lighter;
+}
+::-moz-placeholder {
+  font-style: italic;
+  color: rgba(81, 139, 164, 0.7);
+  font-weight: lighter;
+}
+.register-form input[type="text"],
+.register-form input[type="search"],
+.register-form input[type="email"],
+.register-form input[type="tel"],
+.register-form input[type="url"],
+.register-form textarea,
+.register-form select {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #fff;
+  border: 1px solid #005dab;
+  padding: 5px;
+  color: #005dab;
+  border-radius: 3px;
+  margin: 5px auto;
+}
+.reg-home {
+  position: absolute;
+  width: 30%;
+  height: auto;
+  overflow-x: hidden;
+  left: 50%;
+  top: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #fff;
+}
+.title-lr {
+  color: #005dab;
+  width: 100%;
+  font-size: .9em;
+  margin: 0px;
+  font-weight: normal;
+}
+.border-botr {
+  border-bottom: 1px solid #005dab;
+}
+.register-form input[type="checkbox"],
+.register-form input[type="radio"] {
+  width: max-content;
+}
+.reg-home .card-header {
+  margin-bottom: 20px;
 }
