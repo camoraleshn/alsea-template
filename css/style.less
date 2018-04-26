@@ -1,0 +1,110 @@
+/* === VARIABLES ==== */
+
+@blue-login: hsla(198, 34%, 48%, .7);
+@blue-home: hsla(197, 95%, 25%, 1);
+@blue-button: #005dab;
+@white: #fff;
+
+
+
+/* ==== FONTS ==== */
+
+
+
+/* ==== RESETS ==== */
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+}
+
+
+/* ==== MIXINS ==== */
+
+.bg-trans {
+	background: transparent;
+}
+
+.border-bot {
+	border-bottom: 1px solid @white;
+}
+
+.bg-blue-login {
+	background: @blue-login;
+}
+
+.text-white	{
+	color: @white;
+}
+
+
+/* ==== HOME ==== */
+
+.title-lh {
+	width: 100%;
+	font-size: .9em;
+	margin: 0px;
+	font-weight: normal;
+}
+
+.logo-login {
+	width: 100%;
+	height: 70px;
+	background: url(../img/logo.png) center center no-repeat;
+	background-size: contain;
+	margin-bottom: 40px;
+}
+
+.form-login-home {
+	width: 90%;
+	margin: 40% 5% 0px 5%;
+}
+
+.button-login {
+	width: 100% !important;
+	text-align: center;
+	padding: 15px 0px !important;
+	font-size: 14px;
+	margin-top: 20px;
+	background: @blue-button;
+}
+
+.button-login:hover {
+	opacity: .8;
+}
+
+.form-login-home input:active, .form-login-home input:focus {
+	background: transparent;
+	outline: 0px;
+}
+
+.copy-home {
+	position: absolute; 
+	bottom: 0px; 
+	right: 0px; 
+	left: 0px;
+}
+
+.home-login {
+	background: url(../img/bg-home.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+.bg-blue-home {
+	background: url(../img/bg2-home.png) center center no-repeat;
+	background-size: 50%;
+}
+
+.mx-login {
+	width: 100%;
+	height: 60px;
+	margin-bottom: 10px;
+	background: url(../img/angel.png) center center no-repeat;
+	background-size: contain;
+}
