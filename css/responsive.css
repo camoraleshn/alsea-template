@@ -18,6 +18,30 @@
   .reg-home {
     width: 70%;
   }
+  .bb1 {
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0px;
+    font-weight: bold;
+  }
+  .bb1:last-child {
+    border-bottom: none;
+  }
+  .b2 {
+    border: 1px solid #ccc !important;
+    border-radius: 4px;
+    padding: 15px 0px;
+  }
+  .info-col {
+    display: none;
+  }
+  .info-prov {
+    padding: 0px !important;
+  }
+  .active-icon,
+  .off-icon,
+  .edit-icon {
+    margin-right: 25px;
+  }
 }
 @media (max-width: 576px) {
   .home-right {

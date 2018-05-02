@@ -6,6 +6,8 @@
 @green-button: #64b84d;
 @orange-button: #e67b21;
 @white: #fff;
+@blueColor: #005a81;
+@hover: #005a81;
 
 
 
@@ -19,6 +21,7 @@
 	padding: 0px;
 	margin: 0px;
 	list-style: none;
+	word-wrap: break-word !important;
 }
 
 body, html {
@@ -67,6 +70,47 @@ a:hover {
 	opacity: .8;
 }
 
+.b1 {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 10px 0px;
+}
+
+.b2 {
+	border-top: 1px solid #ccc !important;
+	border-right: 1px solid #ccc !important;
+	border-bottom: 1px solid #ccc !important;
+	border-left: 10px solid;
+	border-radius: 0px 4px 4px 0px;
+}
+
+.b3 {
+	border-bottom: 1px solid #ccc;
+}
+
+.mt1 {
+	margin-top: 15px !important;
+}
+
+.mt2 {
+	margin-top: 30px !important;
+}
+
+.m1 {
+	margin-bottom: 15px !important;
+}
+
+.m2 {
+	margin-bottom: 30px !important;
+}
+
+.s1 {
+	box-shadow: 1px 1px 5px #ccc;
+}
+
+.p1 {
+	padding: 15px 0px;
+}
 
 /* ==== HOME ==== */
 
@@ -267,4 +311,253 @@ a:hover {
 
 .reg-home .card-header {
 	margin-bottom: 20px;
+}
+
+
+/* ==== HEADER ==== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	list-style: none;
+}
+
+nav ul{
+    list-style: none;
+    text-align: right;
+    background: @blueColor;
+	padding: 20px 0px;
+}
+
+.logo-nav {
+	float: left;
+	margin-left: 20px;
+	width: max-content;
+}
+
+.logo-nav a {
+	display: block;
+	height: 50px;
+	width: 70px;
+	background: url(http://lorempixel.com/70/50/) center center no-repeat, #ccc;
+	background-size: contain;
+}
+
+
+.user-nav {
+	float: none;
+	margin: 0px auto !important;
+	text-align: center;
+	width: max-content;
+	overflow: hidden;
+	height: 50px;
+}
+
+.user-nav a {
+	display: block;
+	height: 50px;
+	width: 50px;
+	background: url(http://lorempixel.com/50/50/) center center no-repeat, #ccc;
+	background-size: contain;
+	border-radius: 50%;
+	float: left;
+}
+
+.user-nav span {
+	display: block;
+	color: #fff;
+	font-weight: lighter;
+	font-size: 16px;
+	padding: 15px 10px;
+	float: left;
+}
+
+.menu-nav {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+	height: 50px;
+	padding: 15px 20px;
+	width: max-content;
+	float: right;
+	position: absolute;
+	right: 1%;
+	top: 15px;
+}
+
+.menu-nav a {
+	color: #fff;
+}
+
+.menu-lateral{
+    top: 0;
+    right: 0;
+    position: fixed;
+    background: #212121;
+    width: 250px;
+    height: 100%;
+	overflow-y: scroll;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.5);
+	display: none;
+	color: #fff;
+	z-index: 9999999999;
+}
+
+.menu-lateral a{
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-lateral .close {
+    text-align: right;
+    font-size: 20px;
+	font-weight: lighter;
+}
+
+.menu-lateral .menu-item, .menu-lateral .sub-items li a {
+    transition: all 1s ease;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #000;
+}
+
+.menu-lateral .menu-item:hover{
+    box-shadow: inset 900px 0px 0px @hover;
+}
+
+.menu-lateral .sub-items li a:hover{
+    box-shadow: inset 900px 0px 0px @hover;
+}
+
+.menu-lateral:target{
+    display: block;
+}
+
+.menu-lateral:target .sub-items {
+    background: transparent;
+}
+
+/* Acordeon */
+
+.items > li > a {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*.items > li > a::after {
+    position: absolute;
+    right: 30px;
+    margin-top: 2px;
+    font-family: "FontAwesome"
+}
+
+.items > li > a::after {
+    right: 30px;
+    content: "\f061";
+}
+.items > li > a.expanded::after {
+    content: "\f063";
+}
+*/
+
+.itemHover {
+    color: #fff;
+    font-weight: 600;
+    transition: background-color .4s ease-in-out;
+}
+
+.sub-items a {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+	padding-left: 15%;
+	background: transparent !important;
+}
+
+.sub-items .current {
+    position: relative;
+	color: #fff;
+}
+
+.sub-items > li:hover > a {
+    color: #fff;
+    transition: color 0.4s ease-in-out;
+}
+
+.sub-items li:last-child {
+	border-bottom: none;
+}
+
+.sub-items {
+    display: none;
+}
+
+
+/* ==== Provider ==== */
+
+.active-icon, .off-icon, .edit-icon {
+	width: 30px;
+	height: 30px;
+	font-size: 15px;
+	line-height: 30px;
+	text-align: center !important;
+	float: right;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	border-radius: 50%;
+	display: block;
+	color: #fff;
+}
+
+.active-icon:hover, .off-icon:hover, .edit-icon:hover{
+	color: #fff;
+}
+
+.active-icon {
+	background: #007f00;
+}
+
+.off-icon {
+	background: #ff0002;
+}
+
+.edit-icon {
+	background: #3379b7;
+}
+
+.admin-info a {
+	width: 40px;
+	height: 40px;
+	color: #666 !important;
+	margin-right: 15px;
+}
+
+.admin-info {
+	width: 100%;
+	height: 40px;
+	text-align: left;
+	color: #666 !important;
+	font-weight: lighter;
+	font-size: 24px;
+}
+
+
+.b-search {
+	background: #5ac0df;
+	color: #fff;
+	float: right !important;
+	font-weight: lighter;
+	font-size: 14px;
+}
+
+.b-search:hover {
+	background: #29aed6;
 }
