@@ -298,8 +298,8 @@ nav ul {
   display: block;
   height: 50px;
   width: 70px;
-  background: url(http://lorempixel.com/70/50/) center center no-repeat, #ccc;
-  background-size: contain;
+  background: url(../img/logo-alsea.png) center center no-repeat;
+  background-size: cover;
 }
 .user-nav {
   float: none;
@@ -309,7 +309,7 @@ nav ul {
   overflow: hidden;
   height: 50px;
 }
-.user-nav a {
+/*.user-nav a {
   display: block;
   height: 50px;
   width: 50px;
@@ -317,13 +317,13 @@ nav ul {
   background-size: contain;
   border-radius: 50%;
   float: left;
-}
+}*/
 .user-nav span {
   display: block;
   color: #fff;
   font-weight: lighter;
   font-size: 16px;
-  padding: 15px 10px;
+  padding: 15px 100px 15px 10px;
   float: left;
 }
 .menu-nav {
@@ -342,57 +342,69 @@ nav ul {
 .menu-nav a {
   color: #fff;
 }
-.menu-lateral {
-  top: 0;
-  right: 0;
-  position: fixed;
-  background: #212121;
-  width: 250px;
-  height: 100%;
+.menu-lateral{
+    top: 0;
+    right: 0;
+    position: fixed;
+    background: #212121;
+    width: 250px;
+    height: 100%;
   overflow-y: scroll;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.5);
   display: none;
   color: #fff;
-  z-index: 9999999999;
+  z-index: 9999999;
 }
-.menu-lateral a {
-  display: block;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-decoration: none;
-  color: #fff;
+
+.menu-lateral a{
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    color: #fff;
 }
+
 .menu-lateral .close {
-  text-align: right;
-  font-size: 20px;
+    text-align: right;
+    font-size: 20px;
   font-weight: lighter;
 }
-.menu-lateral .menu-item,
-.menu-lateral .sub-items li a {
-  transition: all 1s ease;
+
+.menu-lateral .menu-item, .menu-lateral .sub-items li a {
+    transition: all 1s ease;
   border-top: 1px solid #333;
   border-bottom: 1px solid #000;
 }
-.menu-lateral .menu-item:hover {
-  box-shadow: inset 900px 0px 0px #005a81;
+
+.menu-lateral .menu-item:hover{
+    box-shadow: inset 900px 0px 0px #005a81;
 }
-.menu-lateral .sub-items li a:hover {
-  box-shadow: inset 900px 0px 0px #005a81;
+
+.menu-lateral .sub-items li a:hover{
+    box-shadow: inset 900px 0px 0px #005a81;
 }
-.menu-lateral:target {
-  display: block;
+
+.menu-lateral:target{
+    display: block;
 }
+
 .menu-lateral:target .sub-items {
-  background: transparent;
+    background: transparent;
 }
+
 /* Acordeon */
 .items > li > a {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
 }
+
+.items > li:first-child {
+  margin-top: 50px;
+}
+
 /*.items > li > a::after {
     position: absolute;
     right: 30px;
@@ -406,35 +418,99 @@ nav ul {
 }
 .items > li > a.expanded::after {
     content: "\f063";
-}
-*/
+}*/
+
 .itemHover {
-  color: #fff;
-  font-weight: 600;
-  transition: background-color 0.4s ease-in-out;
+    color: #fff;
+    font-weight: 600;
+    transition: background-color .4s ease-in-out;
 }
+
 .sub-items a {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  width: 100%;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
   padding-left: 15%;
   background: transparent !important;
 }
+
 .sub-items .current {
-  position: relative;
+    position: relative;
   color: #fff;
 }
+
 .sub-items > li:hover > a {
-  color: #fff;
-  transition: color 0.4s ease-in-out;
+    color: #fff;
+    transition: color 0.4s ease-in-out;
 }
+
 .sub-items li:last-child {
   border-bottom: none;
 }
+
 .sub-items {
-  display: none;
+    display: none;
 }
+/*.nav {
+  list-style: none;
+  font-size: 14px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.nav li {
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+}
+.nav li a:hover {
+  transition: color 0.4s ease-in-out;
+  box-shadow: inset 900px 0px 0px #005a81;
+}
+.nav > li > a {
+  display: block;
+  padding: 7px;
+  overflow: hidden;
+  /*..*/
+  transition: all 1s ease;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #000;
+}
+.drop > li > a {
+  padding: 7px 25px;
+  transition: all 1s ease;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #000;
+}
+.drop {
+  list-style: none;
+  display: block;
+  max-height: 0;
+  transition: max-height 0.3s;
+}
+.arrow {
+  position: relative;
+  top: 5px;
+  float: right;
+  display: inline-block;
+  border-right: 0.14em solid;
+  border-bottom: 0.14em solid;
+  width: 8px;
+  height: 8px;
+  transform: rotate(-45deg);
+  margin-right: 0.5em;
+  transition: ease-in 0.2s;
+}
+.active .drop {
+  max-height: 250px;
+  transition: max-height 1s ease-out;
+}
+.actived {
+  transform: rotate(45deg) !important;
+}*/
+
+
 /* ==== PROVIDER ==== */
 .active-icon,
 .off-icon,
@@ -547,4 +623,21 @@ footer ul li a:hover {
 .new-prov-form label{
   color: #777;
   font-size: 15px;
+}
+
+
+.language {
+  width: 100%;
+  text-align: right;
+  padding: 1% 3% 0 0;
+  color: #fff;
+}
+
+.language a {
+  color: #fff;
+  padding: 0px 5px;
+}
+
+.language a:hover {
+  color: #e67b21;
 }
